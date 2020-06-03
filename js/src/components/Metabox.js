@@ -15,6 +15,7 @@ import Collapsible from "./SidebarCollapsible";
 import SidebarItem from "./SidebarItem";
 import TopLevelProviders from "./TopLevelProviders";
 import AdvancedSettings from "./AdvancedSettings";
+import SchemaTabContainer from "../containers/SchemaTab";
 
 /**
  * Creates the Metabox component.
@@ -100,6 +101,15 @@ export default function Metabox( { settings, store, theme } ) {
 						<AdvancedSettings />
 					</TopLevelProviders>
 				</SidebarItem> }
+				<SidebarItem renderPriority={ 50 }>
+					<TopLevelProviders
+						store={ store }
+						theme={ theme }
+						location={ "metabox" }
+					>
+						<SchemaTabContainer />
+					</TopLevelProviders>
+				</SidebarItem>
 			</Fill>
 		</Fragment>
 	);
