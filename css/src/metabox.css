@@ -676,4 +676,15 @@ ul.wpseo-metabox-tabs li.wpseo-tab-add-keyword {
   align-items: center;
 }
 
+.wpseo-schema-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--svg-icon-schema);
+  background-size: cover;
+}
+
 /*# sourceMappingURL=metabox.css.map */
